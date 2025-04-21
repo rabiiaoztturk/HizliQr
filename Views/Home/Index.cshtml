@@ -4,7 +4,6 @@
     ViewData["Title"] = "QR Kod Oluştur";
 }
 
-<!-- Font Awesome CDN -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <style>
@@ -118,13 +117,13 @@
         justify-content: space-between;
         max-width: 1200px;
         margin: 40px auto;
-        gap: 20px; /* Space between items */
+        gap: 20px; 
     }
 
-    /* Individual step adjustments */
+
     .step-section {
-        flex: 1; /* Each step takes equal space */
-        margin-top: 0; /* Remove the original top margin */
+        flex: 1; 
+        margin-top: 0; 
         padding: 20px;
     }
 
@@ -162,10 +161,10 @@
                 return;
             }
 
-            // Renk değerlerini al
-            const colorDark = $('#colorInput').val() || '#2a5298'; // Varsayılan renk
+            // Renk alanı
+            const colorDark = $('#colorInput').val() || '#2a5298'; 
 
-            // QR Kod oluştur
+            //QR Kod oluştur
             new QRCode(qrCodeDiv, {
                 text: inputValue,
                 width: 200,
@@ -184,7 +183,6 @@
     <div class="qr-container">
         <h1 class="qr-header">QR Kodunuzu Kolayca Oluşturun</h1>
 
-        <!-- Sekmeler -->
         <ul class="nav nav-tabs" id="qrTabs" role="tablist">
             <li class="nav-item">
                 <a class="nav-link active" href="#url" onclick="openTab('url')" role="tab">URL</a>
@@ -197,7 +195,6 @@
             </li>
         </ul>
 
-        <!-- Sekme İçerikleri -->
         <div class="tab-content">
             <div class="tab-pane fade show active" id="url" role="tabpanel">
                 <div class="mb-3">
@@ -219,16 +216,14 @@
             </div>
         </div>
 
-        <!-- Renk Seçimi Alanı -->
         <div class="mb-3">
             <label for="colorInput" class="form-label fw-bold">QR Kod Rengini Seçin (Opsiyonel)</label>
             <input type="color" class="form-control form-control-color" id="colorInput" value="#2a5298">
         </div>
 
-        <!-- Oluştur Butonu -->
         <button class="btn btn-generate w-100" onclick="generateQR()">QR Kodunu Oluştur</button>
 
-        <!-- QR Kod Görüntüleme Alanı -->
+
         <div id="qrCode"></div>
         <button class="btn btn-secondary w-100 mt-3" onclick="downloadQR()">QR Kodunu İndir</button>
     </div>
@@ -245,8 +240,6 @@
             }
         }
     </script>
-    <!-- Rehber Adımlar -->
-    <!-- Replace the existing step sections with this -->
     <div class="steps-container">
         <div class="step-section">
             <i class="fas fa-list-ul"></i>

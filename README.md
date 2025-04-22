@@ -2,4 +2,4 @@ HızlıQR, kullanıcıların hızlı ve kolay bir şekilde özelleştirilebilir 
 
 HızlıQR, ASP.NET Core (Razor Pages) altyapısıyla geliştirilmiş olup Bootstrap 5, jQuery ve QRCode.js gibi güçlü teknolojileri kullanır. Özel CSS ile şık ve modern bir görünüme sahip olan uygulama, Font Awesome ikonlarıyla zenginleştirilmiştir. HTML5 ve JavaScript desteği, uygulamanın hem hızlı hem de işlevsel olmasını sağlar. Çoklu veri türü desteği, renk özelleştirme ve kolay indirme gibi özellikleriyle HızlıQR, QR kod oluşturma sürecini basit, etkili ve keyifli hale getirir.
 
-🔗 Live link: 
+🔗 Live link: https://hizliqr.rabiaozturk.com.tr/
